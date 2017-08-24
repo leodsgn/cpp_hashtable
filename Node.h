@@ -11,7 +11,8 @@ class Node {
 
 private:
     int key;
-    T* value;
+    T * value;
+    Node<T> * nextNode;
 
 public:
 
@@ -34,6 +35,14 @@ public:
 
     void setValue(T* value){
         this->value = value;
+    }
+
+    Node<T> * next() {
+        return this->nextNode;
+    }
+
+    void setNext(Node<T> * data) {
+        this->nextNode = data;
     }
 
 };
