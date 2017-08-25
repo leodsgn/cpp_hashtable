@@ -46,7 +46,7 @@ public:
      * @param key
      * @return
      */
-    Node<T> * get(int key) {
+    T get(int key) {
         int hash = hashFunction(key);
 
         if(data[hash] == nullptr ) {
@@ -69,7 +69,7 @@ public:
      * @param key
      * @param value
      */
-    void put(int key, T * value) {
+    void put(int key, T value) {
         int hash = hashFunction(key);
 
         if(data[hash] == nullptr)
