@@ -11,12 +11,12 @@ class Node {
 
 private:
     int key;
-    T * value;
+    T value;
     Node<T> * nextNode;
 
 public:
 
-    Node(int key, T* value) {
+    Node(int key, T value) {
         this->key = key;
         this->value = value;
     }
@@ -33,7 +33,7 @@ public:
         this->key = key;
     }
 
-    void setValue(T* value){
+    void setValue(T value){
         this->value = value;
     }
 
